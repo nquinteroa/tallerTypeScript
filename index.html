@@ -15,33 +15,15 @@
                     <img src="https://i.pinimg.com/originals/7f/fd/96/7ffd961b1cfdfb577430550318af186f.jpg" height="300px" width="300px" alt="Avatar">
                     <h2>Datos Personales</h2>
                     <table class ="table">
-                        <thead>
-                            <tr>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                           
-            <tr>
-                <td>Código</td>
-                <td>201913972</td>
-            </tr>
-            <tr>
-                <td>Cédula</td>
-                <td>1000796233</td>
-            </tr>
-            <tr>
-                <td>Edad</td>
-                <td>19 Años</td>
-            </tr>
-            <tr>
-                <td>Dirección</td>
-                <td>Tu corazon bb</td>
-            </tr>
-            <tr>
-                <td>Teléfono</td>
-                <td>305712447</td>
-            </tr>
+                        <table class="table">
+                            <thead class="thead-dark">
+                               <tr></tr>
+                            </thead>
+                            <tbody id="students">
+    
+                            </tbody>
+                        </table>
+            
                         </tbody>
                     </table>
                 </div>
@@ -77,9 +59,25 @@
     <h2 id ="total-credits">
     </h2>
 </div>
+
+<form style="margin:10px;">
+    <div class="form-row">
+      <div class="col">
+          <input type="text" class="form-control" id="search-box1" placeholder="credito minimo a buscar">
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" id="search-box2" placeholder="credito maximo a buscar">
+    </div>
+      <div class="col">
+          <button type="button" id="button-filterByRange" class="btn btn-success">Aplicar</button>
+      </div>
+    </div>
+</form>
     </tbody> 
     <script type="module" src="./scripts/course.js" ></script>
     <script type="module" src="./scripts/dataCourses.js" ></script>
+    <script type="module" src="./scripts/student.js" ></script>
+    <script type="module" src="./scripts/dataStudent.js" ></script>
     <script type="module" src="./scripts/main.js"></script> 
 </body>
 </html>
